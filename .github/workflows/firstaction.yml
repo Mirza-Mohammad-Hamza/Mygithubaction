@@ -6,12 +6,12 @@ jobs:
     name: Lint Code Base
     runs-on: ubuntu-latest
     steps:
-      -name: checkout Code
-       uses: action/checkout@v2
+      - name: checkout Code
+        uses: action/checkout@v2
        
-       -name: Run Linter
+      - name: Run Linter
         uses: action/super-linter@v3
-       env:
-       DEFAULT_BRANCH: main
+        env:
+         DEFAULT_BRANCH: main
        
         
